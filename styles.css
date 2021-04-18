@@ -1,0 +1,96 @@
+body {
+  background: #ecf0f1;
+}
+
+* {
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.75), 0px -1px 1px rgba(0, 0, 0, 0.75) !important;
+}
+
+.jumbotron {
+  background-color: #ecf0f1;
+  box-shadow:  10px 10px 20px #c9cccd, 
+             -10px -10px 20px #ffffff;
+}
+
+.btn {
+  color: #333;
+  border: none;
+  background: #ecf0f1 !important;
+  box-shadow:  8px 8px 15px #c9cccd, 
+  -8px -8px 15px #ffffff;
+  transition: 0.4s;
+}
+
+.btn:hover {
+  color: #333;
+  box-shadow:
+  4px 4px 10px #c9cccd, 
+  -4px -4px 10px #ffffff;
+}
+
+.btn:active, .btn:focus {
+  color: #333 !important;
+  box-shadow:
+    inset 2px 2px 8px #c9cccd, 
+    inset -2px -2px 8px #ffffff;
+}
+
+input, input:focus {
+  border-radius: 50px !important;
+  background: #ecf0f1 !important;
+  box-shadow: inset 3px 3px 7px #c9cccd, 
+              inset -3px -3px 7px #ffffff;
+  border: none !important;
+  /* Below gets rid of the default chrome styles for autocomplete */
+  outline: 0 !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+}
+
+input[name="country_code"], input[name="area_code"], input[name="phone_number"] {
+  text-align: center;
+}
+
+input::placeholder {
+  color: #bdc3c7;
+}
+
+textarea {
+  padding: 1em 2em !important;
+}
+
+.home {
+  height: 100% !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden;
+}
+
+.alert {
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.home div.jumbotron {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home header {
+  /* background: rgba(255, 255, 255, 0.75); */
+  padding: 2em;
+  border-radius: 5px;
+}
+
+.home header h1 {
+  text-align: center;
+  font-size: 5em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
